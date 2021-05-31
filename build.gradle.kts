@@ -4,7 +4,7 @@ plugins {
   java
   idea
   eclipse
-	id ("com.github.ben-manes.versions") version "0.36.0"
+	id ("com.github.ben-manes.versions") version "0.39.0"
 }
 
 repositories {
@@ -12,10 +12,8 @@ repositories {
 }
 
 dependencies {
-	//implementation ("io.reactivex.rxjava2:rxjava:2.2.20")
-	implementation ("io.reactivex:rxjava:1.3.8")
 
-	testImplementation("org.assertj:assertj-core:3.18.1")
+	testImplementation("org.assertj:assertj-core:3.19.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
 
