@@ -8,12 +8,14 @@ plugins {
 }
 
 repositories {
-  jcenter()
+  mavenCentral()
 }
 
 dependencies {
 
 	testImplementation("org.assertj:assertj-core:3.20.2")
+
+    testImplementation("org.hamcrest:hamcrest:2.2")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
 
