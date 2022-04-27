@@ -8,3 +8,4 @@ Java examples
 * Annotations
 * Collections
 * Generics
+* Streams
