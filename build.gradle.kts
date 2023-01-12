@@ -4,8 +4,8 @@ plugins {
   java
   idea
   eclipse
-    id("com.diffplug.spotless") version "6.5.0"
-    id("com.github.ben-manes.versions") version "0.42.0"
+    id("com.diffplug.spotless") version "6.12.1"
+    id("com.github.ben-manes.versions") version "0.44.0"
 
 }
 
@@ -20,13 +20,13 @@ java {
 
 dependencies {
 
-	testImplementation("org.assertj:assertj-core:3.22.0")
+	testImplementation("org.assertj:assertj-core:3.24.1")
 
     testImplementation("org.hamcrest:hamcrest:2.2")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
 
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
 }
 
 val test by tasks.getting(Test::class) {
