@@ -20,7 +20,7 @@ class CollectionTest {
 
 	@Test
 	void testRetainAll() {
-		Collection<String> pasta = new ArrayList();
+		Collection<String> pasta = new ArrayList<>();
 		pasta.add("Spaghetti");
 		pasta.add("Linguine");
 		pasta.add("Farfalle");
