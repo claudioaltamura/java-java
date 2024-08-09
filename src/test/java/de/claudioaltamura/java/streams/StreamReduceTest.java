@@ -11,6 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class StreamReduceTest {
 
     private final List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+
     @Test
     @DisplayName("sum ups a custom accumulator")
     void sumUp() {
