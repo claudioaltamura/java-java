@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/claudioaltamura/java-java.svg?branch=main)](https://travis-ci.com/github/claudioaltamura/java-java)
+![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/claudioaltamura/java-java/build-gradle-project.yml?branch=main)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
