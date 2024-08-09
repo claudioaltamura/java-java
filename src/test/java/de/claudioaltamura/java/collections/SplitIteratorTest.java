@@ -18,7 +18,7 @@ class SplitIteratorTest {
 
 		int count = 0;
 		Spliterator<Person> spliterator = persons.spliterator();
-		Consumer<Person> consumer = p-> p.setName(p.getName().concat(" Roberts"));
+		Consumer<Person> consumer = p -> p.setName(p.getName().concat(" Roberts"));
 		while(spliterator.tryAdvance(consumer)) {
 			count++;
 		}
