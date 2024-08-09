@@ -7,5 +7,7 @@ Java examples
 
 * Annotations
 * Collections
+* functional programming
 * Generics
+* specific solutions
 * Streams
