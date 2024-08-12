@@ -2,13 +2,7 @@ package de.claudioaltamura.java.streams;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -52,6 +46,19 @@ class SortTest {
 		}
 
 		assertArrayEquals(new Integer[]{ 12, 22, 55 }, sortedMap.keySet().toArray());
+	}
+
+	@Test
+	void shouldContainsStringsWithC() {
+		var myList = Arrays.asList("a1", "a2", "b1", "c2", "c1");
+
+		var cList = myList.stream()
+				.filter(s -> s.startsWith("c"))
+				.map(String::toUpperCase)
+				.sorted()
+				.toList();
+
+		assertEquals(cList, List.of("C1", "C2"));
 	}
 
 }
