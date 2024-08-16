@@ -41,10 +41,10 @@ class MiscStreamTest {
 
 	@Test
 	void shouldSortAndFilter() {
-		assertEquals(Stream.of("d2", "a2", "b1", "b3", "c")
+		assertEquals(List.of("B1", "B3"), Stream.of("d2", "a2", "b1", "b3", "c")
 				.filter(s -> s.startsWith("b"))
 				.sorted(String::compareTo)
 				.map(String::toUpperCase)
-				.toList(), List.of("B1", "B2"));
+				.toList());
 	}
 }
