@@ -22,7 +22,7 @@ class StreamReduceTest {
     }
 
     @Test
-    @DisplayName("sum ups using a method reference")
+    @DisplayName("sums up using a method reference")
     void sumUpMethodReference() {
         int result = numbers
                 .stream()
@@ -40,4 +40,13 @@ class StreamReduceTest {
         assertThat(result).isEqualTo("abcde");
     }
 
+    @Test
+    @DisplayName("sums up the age of persons")
+    void sumUpAgeOfPersons() {
+        var ages = List.of(12,15,21,23,28);
+
+        Integer ageSum = ages.stream().reduce(0, (sum, age) -> sum += age);
+
+        assertThat(ageSum).isEqualTo(99);
+    }
 }
